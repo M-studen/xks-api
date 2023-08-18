@@ -5,7 +5,7 @@
   "main": "sever.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./sever.js"
+    "build": "npm i&&prisma generate&&node ./sever.js"
   },
   "keywords": [],
   "author": "",
