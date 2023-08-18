@@ -3,7 +3,7 @@ const app = express();
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 //定义端口号
-const port = 80;
+const port = 3000;
 async function getallarticle(){
     return prisma.article.findMany()
 }
