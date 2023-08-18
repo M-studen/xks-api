@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Article {
+  id        Int      @id @default(autoincrement())
+  title     String   @db.VarChar(255)
+  link      String?  @default("")
+}
+model Member {
+  id        Int     @id @default(autoincrement())
+  name      String
+  tag       String  
+  avatar    String  @default("https://pic.imgdb.cn/item/64df2a6b661c6c8e54566e0c.jpg")
+  address   String  
+  link      String?
+  githublink String?
+  qqlink    String?
+}
+model Plan{
+  id        Int      @id @default(autoincrement())
+  status    Int      @default(0)
+  time      DateTime
+}
+model frienlink{
+  id        Int     @id @default(autoincrement())
+  title     String  
+  link      String
+  description String 
+}
+model banner{
+  id        Int      @id @default(autoincrement())
+  title     String   @db.VarChar(255)
+  link      String  
+}
+model projects{
+  id        Int      @id @default(autoincrement())
+  name      String
+  link      String
+  description String
+}
