@@ -2,11 +2,11 @@
   "name": "websever",
   "version": "1.0.0",
   "description": "",
-  "main": "sever.js",
+  "main": "index.js",
   "scripts": {
     "build": "echo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++",
-    "start": "npm i&&prisma generate&&node ./sever.js",
-    "dev": "npm i&&prisma generate&&node ./sever.js"
+    "start": "npm i&&prisma generate&&node ./index.js",
+    "dev": "npm i&&prisma generate&&node ./index.js"
   },
   "keywords": [],
   "author": "",
