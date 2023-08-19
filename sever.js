@@ -32,7 +32,7 @@ async function getprojects(){
     return prisma.projects.findMany()
 }
 //添加路由
-app.get('/', (req, res) => res.send(app.routes));
+app.get('/', (req, res) => res.send("跑起来了，跑起来了！人和程序有一个可以跑就行！！！"));
 // 绑定端口号
 app.get('/article',async(req,res)=>{
     let data=await getallarticle()
