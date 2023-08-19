@@ -4,7 +4,7 @@
   "description": "",
   "main": "sever.js",
   "scripts": {
-    "build": "cd .",
+    "build": "echo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++",
     "start": "npm i&&prisma generate&&node ./sever.js",
     "dev": "npm i&&prisma generate&&node ./sever.js"
   },
